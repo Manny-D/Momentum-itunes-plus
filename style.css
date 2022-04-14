@@ -1,0 +1,119 @@
+body {
+    width: 960px;
+    margin: auto;
+    /* padding:;   */
+    background: black;
+    border-top: 20px orange solid;
+    border-right:20px orange solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ddeeff;
+    font-family: 'Starfleet', sans-serif;
+}
+
+p {
+    color: #ffcc33;
+}
+
+cursor {
+    cursor: pointer;
+}
+
+#player {
+    height: 200px;
+}
+
+#library {
+    display: none;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #FF9104;
+}
+
+input {
+    text-align: center;
+    width: 35%;
+    color: #ddeeff;
+    background-color: black;
+}
+
+::placeholder {
+    text-align: center;
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    font-family: "Lucida Sans";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d4c439;
+}
+
+button:active {
+    background-color: red;
+    color: white;
+}
+
+.green {
+background-color: #00bb00;
+}
+
+.gold {
+background-color: #ffaa00;
+}
+
+.ncc {
+    color: #ddeeff;
+    font-size: large;
+    margin: 5px;
+}
+
+#mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.error {
+    margin-left: 300px;
+    color: rgb(188, 10, 10);
+    font-size: x-large;
+    font-weight: bold;
+    animation: animate 
+                1.5s linear infinite;
+        }
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.9;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+.bandPanel {
+    width: 31.33%;
+    padding: 20px 8px 5px 8px;
+    border: 1px gray solid;
+}
+
+.cToPlay {
+    color: brown;
+}
