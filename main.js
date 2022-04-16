@@ -3,7 +3,7 @@ console.log("-Database Online-");
 // Computer sound when clicking on StarFleet Logo
 const library = document.querySelector("#sfLogo");
     library.addEventListener("click", function () {
-    var audio = new Audio("/Users/emmanueldador/Documents/Momentum/Projects/stTest/accessinglibrarycomputerdata_clean.mp3");
+    var audio = new Audio("https://trekcore.com/audio/computer/voice/accessinglibrarycomputerdata_clean.mp3");
     audio.play().loop;
     })
 
@@ -15,7 +15,7 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", function (event) {
 event.preventDefault();
 
-    var audio = new Audio("/Users/emmanueldador/Documents/Momentum/Projects/stTest/computerbeep_15.mp3");
+    var audio = new Audio("https://trekcore.com/audio/computer/computerbeep_15.mp3");
     audio.play("submit").loop;
 
 // Reloads / refreshes mainDiv
@@ -53,7 +53,7 @@ fetch(
             mainDiv.appendChild(error);
             
             // ST alert sound on error
-            var audio = new Audio("/Users/emmanueldador/Documents/Momentum/Projects/stTest/alert09.mp3");
+            var audio = new Audio("https://trekcore.com/audio/computer/alert09.mp3");
             audio.play();
 
             return;
@@ -141,6 +141,6 @@ reset.addEventListener('click', () => {
         ncc.classList.add("ncc");
         ncc.innerText = "USS Momentum - NCC 27713";
         topPlayer.appendChild(ncc);
-    var audio = new Audio("/Users/emmanueldador/Documents/Momentum/Projects/stTest/computerbeep_3.mp3");
+    var audio = new Audio("https://trekcore.com/audio/computer/computerbeep_3.mp3");
     audio.play();    
 })
